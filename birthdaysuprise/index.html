@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7d9e8">
+  <title>Happy Birthday, My Love! 💙</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div class="floating-hearts" aria-hidden="true">
+    <span>💙</span><span>💖</span><span>💕</span>
+    <span>✨</span><span>💗</span><span>💙</span>
+  </div>
+
+  <main class="container">
+
+    <!-- PAGE 1: PIN -->
+    <section id="passwordPage" class="page card">
+      <div class="heart-icon">💙</div>
+      <p class="eyebrow">A LITTLE SURPRISE FOR YOU</p>
+      <h1>Hi, My Love! 💖</h1>
+      <p class="description">
+        I made something special just for you.
+        Enter our secret code to unlock your surprise.
+      </p>
+
+      <form id="pinForm">
+        <label for="pinInput">Our Secret PIN</label>
+        <input
+          type="password"
+          id="pinInput"
+          maxlength="6"
+          inputmode="numeric"
+          pattern="[0-9]{6}"
+          placeholder="Enter 6-digit PIN"
+          autocomplete="off"
+          required
+        >
+        <p id="pinError" class="error" aria-live="polite"></p>
+        <button type="submit" class="primary-btn">
+          Unlock My Surprise 💕
+        </button>
+      </form>
+
+      <p class="small-note">Made with love, especially for you. 💌</p>
+    </section>
+
+    <!-- PAGE 2: BIRTHDAY CALENDAR -->
+    <section id="calendarPage" class="page card" hidden>
+      <p class="eyebrow">SAVE THIS SPECIAL DAY</p>
+      <h1>Our Favorite Day 💗</h1>
+      <p class="description">
+        A little reminder of the day someone wonderful was born.
+      </p>
+
+      <div class="calendar">
+        <div class="calendar-heading">
+          <span>💖</span>
+          <h2 id="calendarMonth">October 2000</h2>
+          <span>💙</span>
+        </div>
+
+        <div class="calendar-grid calendar-weekdays">
+          <span>Sun</span>
+          <span>Mon</span>
+          <span>Tue</span>
+          <span>Wed</span>
+          <span>Thu</span>
+          <span>Fri</span>
+          <span>Sat</span>
+        </div>
+
+        <div id="calendarDays" class="calendar-grid"></div>
+      </div>
+
+      <div class="date-message">
+        <span class="date-heart">💝</span>
+        <p>
+          The day that made the world a little brighter:
+          <strong id="birthdayDateText">October 28</strong>
+        </p>
+      </div>
+
+      <div class="page-navigation">
+        <button type="button" class="secondary-btn" data-back="passwordPage">
+          ← Back
+        </button>
+        <button type="button" class="primary-btn" data-next="birthdayPage">
+          Next → 🎂
+        </button>
+      </div>
+    </section>
+
+    <!-- PAGE 3: BIRTHDAY CAKE -->
+    <section id="birthdayPage" class="page card" hidden>
+      <p class="eyebrow">TODAY IS ALL ABOUT YOU</p>
+      <h1>Happy Birthday, My Love! 🎂</h1>
+      <p class="description">
+        You deserve all the happiness, love, and beautiful things
+        this world can offer.
+      </p>
+
+      <div class="birthday-scene">
+        <div class="balloon balloon-one">🎈</div>
+        <div class="balloon balloon-two">🎈</div>
+
+        <div class="cake">
+          <div class="flame"></div>
+          <div class="candle"></div>
+          <div class="cake-top"></div>
+          <div class="cake-middle"></div>
+          <div class="cake-bottom"></div>
+          <div class="cake-plate"></div>
+        </div>
+
+        <div class="cake-hearts">💗 ✨ 💙 ✨ 💖</div>
+      </div>
+
+      <p class="cake-message">
+        Make a wish, baby, and blow out your candle! 🥹💕
+      </p>
+
+      <button type="button" id="wishButton" class="primary-btn">
+        Make a Birthday Wish ✨
+      </button>
+
+      <div id="celebrationMessage" class="celebration-message" hidden>
+        <h2>YAY! 🎉💖</h2>
+        <p>
+          May all your wishes come true, my love.
+          I'll always be cheering for you! 💙
+        </p>
+      </div>
+
+      <div class="page-navigation">
+        <button type="button" class="secondary-btn" data-back="calendarPage">
+          ← Back
+        </button>
+        <button type="button" class="primary-btn" data-next="galleryPage">
+          Next → 📸
+        </button>
+      </div>
+    </section>
+
+    <!-- PAGE 4: PHOTO GALLERY -->
+    <section id="galleryPage" class="page card" hidden>
+      <p class="eyebrow">LITTLE PIECES OF US</p>
+      <h1>My Favorite Memories 📸</h1>
+      <p class="description">
+        Every picture holds a little piece of my heart.
+        These moments mean so much to me because they're with you.
+      </p>
+
+      <div class="photo-grid">
+        <figure class="photo-card">
+          <img src="images/pic1.jpg" alt="Our favorite memory 1">
+          
+        </figure>
+
+        <figure class="photo-card">
+          <img src="images/pic2.jpg" alt="Our favorite memory 2">
+          
+        </figure>
+
+        <figure class="photo-card">
+          <img src="images/pic3.jpg" alt="Our favorite memory 3">
+          
+        </figure>
+
+        <figure class="photo-card">
+          <img src="images/pic4.jpg" alt="Our favorite memory 4">
+          
+        </figure>
+
+        <figure class="photo-card">
+          <img src="images/pic5.jpg" alt="Our favorite memory 5">
+
+        </figure>
+
+        <figure class="photo-card">
+          <img src="images/pic6.jpg" alt="Our favorite memory 6">
+          
+        </figure>
+      </div>
+
+      <div class="page-navigation">
+        <button type="button" class="secondary-btn" data-back="birthdayPage">
+          ← Back
+        </button>
+        <button type="button" class="primary-btn" data-next="letterPage">
+          Read My Letter → 💌
+        </button>
+      </div>
+    </section>
+
+    <!-- PAGE 5: LOVE LETTER -->
+    <section id="letterPage" class="page card" hidden>
+      <p class="eyebrow">A LETTER FROM MY HEART</p>
+      <h1>To My Birthday Boy 💌</h1>
+
+      <div class="letter">
+  <h2>Happy 22nd Birthday, Baby! ❤️🎂</h2>
+
+  <p>
+    Happy birthday, baby! I wish you happiness, good health, and success in everything you do. 
+    Thank you for being part of my life. I’m so proud of you, and I hope we continue to grow 
+    together and make more beautiful memories. Always remember that I love you so much, 
+    and I’ll always be here to support you. Enjoy your special day, baby! ❤️😘
+  </p>
+
+  <p class="letter-signature">
+    Loveyouasalways, 💗
+  </p>
+</div>
+
+      <div class="final-heart">💙 💖 💙</div>
+
+      <div class="page-navigation">
+        <button type="button" class="secondary-btn" data-back="galleryPage">
+          ← Back to Memories
+        </button>
+        <button type="button" id="restartButton" class="primary-btn">
+          Start Again 💕
+        </button>
+      </div>
+    </section>
+
+    <footer>
+      Made with all my love 💙 | Just for you
+    </footer>
+
+  </main>
+
+</body>
+</html>
