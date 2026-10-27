@@ -7,7 +7,7 @@ const SECRET_PIN = "100428";
 // Boyfriend's birthday: October 28, 2004
 const BIRTHDAY_DAY = 28;
 const BIRTHDAY_MONTH = 10;
-const BIRTHDAY_YEAR = 2004;
+const BIRTHDAY_YEAR = 2026;
 
 /* PAGE NAVIGATION */
 const pageIds = [
@@ -176,7 +176,7 @@ wishButton.addEventListener("click", function () {
   }, 3500);
 
   // Falling hearts and birthday confetti.
-  const emojis = ["🎈", "🎈", "🎈", "🎈", "🎈", "🎈"];
+  const emojis = ["🍺", "🍻", "🍺", "🍻", "🍺", "🍻"];
 
   for (let i = 0; i < 25; i++) {
     const confetti = document.createElement("span");
